@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <Target Name="BuildClientApp" AfterTargets="Build">
+    <Exec WorkingDirectory="client-app\" Command="npm install" />
+    <Exec WorkingDirectory="client-app\" Command="npm run build" />
+  </Target>
+</Project>

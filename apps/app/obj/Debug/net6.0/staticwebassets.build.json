@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "IUHcbuZL+siw97xjbn7leowsxXUk9ARm+c2PpmvLrx8=",
+  "Source": "app",
+  "BasePath": "_content/app",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "app/wwwroot",
+      "Source": "app",
+      "ContentRoot": "/home/dlong/personal/employees/apps/app/wwwroot/",
+      "BasePath": "_content/app",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/dlong/personal/employees/apps/app/wwwroot/bundle.js",
+      "SourceId": "app",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/dlong/personal/employees/apps/app/wwwroot/",
+      "BasePath": "_content/app",
+      "RelativePath": "bundle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/bundle.js"
+    },
+    {
+      "Identity": "/home/dlong/personal/employees/apps/app/wwwroot/bundle.js.LICENSE.txt",
+      "SourceId": "app",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/dlong/personal/employees/apps/app/wwwroot/",
+      "BasePath": "_content/app",
+      "RelativePath": "bundle.js.LICENSE.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/bundle.js.LICENSE.txt"
+    }
+  ]
+}
