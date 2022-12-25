@@ -6,7 +6,6 @@ const rootElement = document.getElementById('root');
 if (!rootElement) throw new Error("Error");
 
 const root = ReactDOM.createRoot(rootElement);
-
 root.render(
   <React.StrictMode>
     <App />
