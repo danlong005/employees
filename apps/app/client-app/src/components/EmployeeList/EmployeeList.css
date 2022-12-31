@@ -1,0 +1,17 @@
+
+.employee-list {
+  justify-content: left;
+  text-align: left;
+  list-style: none;
+  padding: 0px;
+  padding-left: 5px;
+}
+
+.employee-list-element {
+  cursor: pointer;
+}
+
+.employee-list-link {
+  color: blue;
+  text-decoration: underline;
+}

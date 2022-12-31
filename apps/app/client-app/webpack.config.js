@@ -14,22 +14,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
+        test: /\.tsx?$|\.ts?$|\.js?$|\.jsw?$/,
+        exclude: path.resolve(__dirname, 'node_modules'),
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-typescript', '@babel/preset-react']
-        },
-        exclude: path.resolve(__dirname, 'node_modules')
+        }
       },
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.css$|\.scss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
       }
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   plugins:[
     new HtmlWebpackPlugin({

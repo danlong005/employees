@@ -10,7 +10,7 @@ async function getEmployees(): Promise<IEmployeeSdkResponse> {
 
   let employeeResponse: IEmployeeSdkResponse = {
     status: 0,
-    employees: null,
+    employees: [],
     employee: null,
   }
 
@@ -18,7 +18,14 @@ async function getEmployees(): Promise<IEmployeeSdkResponse> {
   employeeResponse.status = response.status;
 
   employeeResponse.employees = response.data.map((emp: any) => {
-    return <IEmployee>{ id: emp.id };
+    return <IEmployee>{ 
+      id: emp.id, 
+      firstName: emp.firstName,
+      lastName: emp.lastName,
+      hiredAt: emp.hiredAt,
+      birthDate: emp.birthDate,
+      salary: emp.salary  
+    };
   });
 
   if (employeeResponse.employees == null) employeeResponse.employees = [<IEmployee>{}];

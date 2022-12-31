@@ -1,0 +1,44 @@
+.employee-viewer-container {
+  border: 1px solid red;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-viewer-header {
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.employee-viewer-body {
+  border: 1px solid green;
+  flex: 9;
+  display: flex;
+  flex-direction: row;
+}
+
+.employee-viewer-body-menu {
+  border: 1px solid blue;
+  flex: 1;
+}
+
+.employee-viewer-body-content {
+  border: 1px solid purple;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-viewer-body-content-toolbar {
+  flex: .25;
+}
+
+.employee-viewer-body-content-main {
+  flex: 4;
+  border: 1px solid orange;
+}
+
+.employee-viewer-body-content-footer {
+  flex: 1;
+}
