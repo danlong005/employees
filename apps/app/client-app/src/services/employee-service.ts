@@ -22,9 +22,9 @@ async function getEmployees(): Promise<IEmployeeSdkResponse> {
       id: emp.id, 
       firstName: emp.firstName,
       lastName: emp.lastName,
-      hiredAt: emp.hiredAt,
+      hiredAt: new Date(emp.hiredAt),
       birthDate: emp.birthDate,
-      salary: emp.salary  
+      salary: emp.salary
     };
   });
 

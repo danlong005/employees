@@ -3,7 +3,7 @@ import { IEmployeeViewerProps } from '../../props';
 import './EmployeeViewer.css';
 import { useQuery } from 'react-query';
 import { getEmployees } from '../../services';
-import { EmployeeList, EmployeeDetail } from '../../components';
+import { EmployeeList, EmployeeDetail, EmployeeHeader } from '../../components';
 import { IEmployee } from '../../models';
 
 export const EmployeeViewer: React.FC<IEmployeeViewerProps> = ({}: IEmployeeViewerProps) => {
@@ -17,7 +17,7 @@ export const EmployeeViewer: React.FC<IEmployeeViewerProps> = ({}: IEmployeeView
   return (
     <div className={"employee-viewer-container"}>
       <div className={"employee-viewer-header"}>
-        Employee Viewer
+        <EmployeeHeader />
       </div>
       <div className={"employee-viewer-body"}>
         <div className={"employee-viewer-body-menu"}>

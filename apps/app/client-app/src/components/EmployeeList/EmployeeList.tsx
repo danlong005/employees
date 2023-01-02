@@ -1,6 +1,7 @@
 import React from 'react';
 import { IEmployeeListProps } from '../../props';
 import './EmployeeList.css';
+import { nameFormatter } from '../../formatters';
 
 export const EmployeeList: React.FC<IEmployeeListProps> = ({employees, selectedEmployee}: IEmployeeListProps) => {
   return (
@@ -8,7 +9,7 @@ export const EmployeeList: React.FC<IEmployeeListProps> = ({employees, selectedE
       {employees?.map((employee) => {
         return <li key={employee.id} className={"employee-list-element"}>
                   <a onClick={() => selectedEmployee(employee)}
-                     className={"employee-list-link"}>{employee.lastName}, {employee.firstName}</a>
+                     className={"employee-list-link"}>{nameFormatter(employee.firstName, employee.lastName)}</a>
                 </li>
       })}
     </ul>
