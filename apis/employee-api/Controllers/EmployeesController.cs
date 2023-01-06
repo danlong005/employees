@@ -17,6 +17,6 @@ public class EmployeesController : ControllerBase
   [HttpGet]
   public async Task<IActionResult> GetEmployees() 
   {
-    return StatusCode(StatusCodes.Status200OK, await _employeeService.GetEmployees());
+    return StatusCode(StatusCodes.Status200OK, await _employeeService.GetEmployeesAsync());
   }
 }

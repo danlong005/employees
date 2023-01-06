@@ -1,15 +1,21 @@
 using employees.Services;
+using employees.Database;
+using employees.Resources;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IEmployeeResource, EmployeeResource>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<EmployeesContext>(
+    options => options.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
 
 builder.Services.AddCors(options => {
     options.AddDefaultPolicy(policy => policy.WithOrigins("https://localhost:7190")   
