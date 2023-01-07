@@ -1,0 +1,18 @@
+.employee-detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-detail-image-row {
+  flex: 1;
+}
+
+.employee-detail-row {
+  flex: .10;
+  display: flex;
+  flex-direction: row;;
+}
+
+.employee-detail-col {
+  flex: 1;
+}

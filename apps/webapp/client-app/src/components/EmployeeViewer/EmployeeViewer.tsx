@@ -3,7 +3,7 @@ import { IEmployeeViewerProps } from '../../props';
 import './EmployeeViewer.css';
 import { useQuery } from 'react-query';
 import { getEmployees } from '../../services';
-import { EmployeeList, EmployeeDetail, EmployeeHeader } from '../../components';
+import { EmployeeList, EmployeeDetail, EmployeeHeader, EmployeeFooter, EmployeeToolbar } from '../../components';
 import { IEmployee } from '../../models';
 
 export const EmployeeViewer: React.FC<IEmployeeViewerProps> = ({}: IEmployeeViewerProps) => {
@@ -28,13 +28,13 @@ export const EmployeeViewer: React.FC<IEmployeeViewerProps> = ({}: IEmployeeView
         </div>
         <div className={"employee-viewer-body-content"}>
           <div className={"employee-viewer-body-content-toolbar"}>
-            Toolbar
+            <EmployeeToolbar />
           </div>
           <div className={"employee-viewer-body-content-main"}>
             <EmployeeDetail employee={selectedEmployee!} />
           </div>
           <div className={"employee-viewer-body-content-footer"}>
-            Footer
+            <EmployeeFooter />
           </div>
         </div>
       </div>

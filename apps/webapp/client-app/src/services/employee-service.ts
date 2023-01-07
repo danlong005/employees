@@ -24,7 +24,8 @@ async function getEmployees(): Promise<IEmployeeSdkResponse> {
       lastName: emp.lastName,
       hiredAt: new Date(emp.hiredAt),
       birthDate: emp.birthDate,
-      salary: emp.salary
+      salary: emp.salary,
+      image: emp.image
     };
   });
 

@@ -14,4 +14,6 @@ public class Employee
   public DateTime HiredAt { get; set; }
   [Column("salary")]
   public Double Salary { get; set; }
+  [Column("image")]
+  public string Image { get; set; }
 }

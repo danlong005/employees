@@ -24,6 +24,7 @@ create table public.employees (
   last_name text not null default '',
   hired_at timestamp not null default current_timestamp,
   salary numeric(15, 2) not null default 0.00,
+  image text not null default '',
   created_at timestamp not null default current_timestamp,
   updated_at timestamp not null default current_timestamp
 );

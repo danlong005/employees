@@ -5,4 +5,5 @@ export interface IEmployee {
   hiredAt: Date;
   salary: number;
   birthDate: Date;
+  image: string;
 }
